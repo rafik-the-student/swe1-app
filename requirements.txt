@@ -1,1 +1,5 @@
 Django
+black
+flake8
+coverage
+coveralls
