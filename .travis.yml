@@ -15,4 +15,4 @@ deploy:
   env: "swe1-app-dev"
   bucket_name: "elasticbeanstalk-us-east-1-700311866539"
   on:
-    branch: develop
+    branch: main
