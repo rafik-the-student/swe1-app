@@ -5,3 +5,13 @@ install:
   - pip install -r requirements.txt
 script:
   - coverage run -m unittest discover
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+  region: "us-east-1"  
+  app: "swe1-app"
+  env: "swe1-app-dev"
+  bucket_name: "elasticbeanstalk-us-east-1-700311866539"
+  on:
+    branch: develop
